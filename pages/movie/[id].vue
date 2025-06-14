@@ -56,7 +56,7 @@
                         <p tabindex="0"><strong>Production:</strong> {{ movie?.Production }}</p>
                     </section>
                     <!--RATING COMPONENT-START-->
-                    <RatingStars :movie="movie"/>
+                    <RatingStars :movie="movie" />
                     <!--RATING COMPONENT-END-->
                 </div>
             </div>
