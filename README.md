@@ -5,3 +5,13 @@
 
 # RUN THE PROJECT
 - npm run dev
+
+
+
+
+
+<img width="934" alt="image" src="https://github.com/user-attachments/assets/07f2fbe5-cb67-48be-b30e-0dcb8ddec492" />
+
+
+![image](https://github.com/user-attachments/assets/16987f39-974a-4424-bad0-97da0e75a9b6)
+
