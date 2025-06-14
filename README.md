@@ -7,6 +7,11 @@
 - npm run dev
 
 
+# FOR BUILD
+- npm run build
+- After the checking build
+- npm run preview
+
 
 
 MOVIE LIST PAGE (INDEX PAGE)
