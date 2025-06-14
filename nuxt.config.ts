@@ -10,4 +10,10 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  runtimeConfig: {
+    omdbApiKey: process.env.OMDB_API_KEY,
+    public: {
+      omdbApiKey: process.env.OMDB_API_KEY
+    }
+  }
 })
