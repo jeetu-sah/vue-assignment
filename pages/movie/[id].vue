@@ -55,16 +55,23 @@
                         <p tabindex="0"><strong>Metascore:</strong> {{ movie?.Metascore }}</p>
                         <p tabindex="0"><strong>Production:</strong> {{ movie?.Production }}</p>
                     </section>
+                    <!--RATING COMPONENT-START-->
+                    <RatingStars :movie="movie"/>
+                    <!--RATING COMPONENT-END-->
                 </div>
             </div>
         </article>
     </main>
+
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { useRuntimeConfig } from '#app'
+import RatingStars from '~/components/RatingStars.vue'
+
+
 const config = useRuntimeConfig()
 const API_KEY = config.public.omdbApiKey
 
@@ -80,6 +87,7 @@ const fetchMovieDetail = async () => {
         const data = await res.json()
         if (data.Response === 'True') {
             movie.value = data
+            console.log('movie.value', movie.value)
         } else {
             error.value = data.Error || 'Movie not found'
         }
@@ -89,6 +97,7 @@ const fetchMovieDetail = async () => {
         loading.value = false
     }
 }
+
 
 onMounted(fetchMovieDetail)
 </script>
